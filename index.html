@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CA Kindergarten Immunizations</title>
+  <meta charset="utf-8">
+  <meta name="description" content="CA Kindergarten Immunizations">
+  <meta name="author" content="Jesse Sharp">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../vaxapp_deck/libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../vaxapp_deck/libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../vaxapp_deck/libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../vaxapp_deck/libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../vaxapp_deck/libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../vaxapp_deck/libraries/frameworks/io2012/js/slides" 
+    src="../vaxapp_deck/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../vaxapp_deck/assets/img/logo.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>CA Kindergarten Immunizations</h1>
+    <h2>Personal Belief Exemptions 2014-2015</h2>
+    <p>Jesse Sharp<br/>Coursera Dev Data Products</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>.title-slide{background-color: white; </style>   
+
+<h2>VaxApp: Exploring Immunization Data</h2>
+
+<h3>Motivation</h3>
+
+<p>This app was motivated by the clash of politics and public health stemming from a measles outbreak centered in California in early 2015. &quot;In June 2015, California became one of a number of states to pass a law that prevents parents from seeking vaccine exemption on the basis of philosophical and religious beliefs.&quot; (Newsweek)
+<br></br>
+This Shiny App uses the dataset
+<a href="https://cdph.data.ca.gov/api/views/4y8p-xn54/rows.csv?accessType=DOWNLOAD">School Immunizations in Kindergarten 2014-2015</a>
+to explore personal belief exemptions obtained after January 2014 with the hypothesis that these are primarily politically motivated. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4>Key fields: County, Schooltype (public, private), Enrollment, Total Personal Belief Exemptions, Pre-Jan PBE, Health Care PBE, Religious PBE</h4>
+
+<p></p>
+
+<h4>Computed fields: Crude PBE Rate = Total PBE / Enrollment</h4>
+
+<h4>Post-Jan PBE PCT = (Total PBE - Pre-Jan PBE) / Total PBE</h4>
+
+<h4>HC PCT = HC PBE / Post-Jan PBE for Post-Jan PBE &gt; 0</h4>
+
+<p></p>
+
+<h4>The computed measures are available as selections in the app.</h4>
+
+<p></p>
+
+<h4>Only schools with at least one PBE are included.</h4>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The App</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h4>Exploration</h4>
+
+<p><img src="assets/fig/showdat-1.png" alt="plot of chunk showdat"> </p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h4>Comments</h4> 
+
+<p>The <b>Exploration</b> tab allows us to visualize the data as well as do some testing<br>
+The <b>Data</b> tab shows county level data sorted by the selected measure<br>
+The <b>About</b> tab gives an overview of the motivation and data    </p>
+
+<p><b>Link to the App</b> <a href="https://www.shinyapps.io/vaxapp1">VaxApp</a></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>We explored Personal Belief Exemptions in order to:<br>
+     1. Demonstrate Shiny features such as input, reactive output and server calculations.<br>
+     2. Show how count data such as the CA immunization data can be interesting and useful.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../vaxapp_deck/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
