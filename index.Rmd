@@ -87,7 +87,7 @@ The <b>Exploration</b> tab allows us to visualize the data as well as do some te
 The <b>Data</b> tab shows county level data sorted by the selected measure     
 The <b>About</b> tab gives an overview of the motivation and data    
 
-<b>Link to the App</b> [VaxApp](https://www.shinyapps.io/vaxapp1)
+<b>Link to the App</b> [VaxApp](https://sharpstatsci.shinyapps.io/vaxapp1/)
 
 ---
 
